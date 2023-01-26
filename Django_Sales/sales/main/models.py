@@ -6,13 +6,13 @@ from django.utils.translation import gettext_lazy as _
 def validate_int(value):
     if value < 0:
         raise ValidationError(
-            _('%(value)s Не может быть отрицательной'),
+            _('%(value)s Не может быть отрицательной!'),
             params={'value': value})
 
 def validate_price(value):
     if value < 0:
         raise ValidationError(
-            _('%(value)s Цена не может быть отрицательной'),
+            _('%(value)s Цена не может быть отрицательной!'),
             params={'value': value})
 
 
